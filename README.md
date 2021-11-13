@@ -45,19 +45,29 @@ npm start
 >
 > If you see `npm ERR! code ENOLOCAL`, try running `npm ci` instead of `npm install`.
 
-Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
-need to have [Metamask](https://metamask.io) installed and listening to
-`localhost 8545`.
+Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. 
 
+Before you can get everything working, you need to setup Metamask to have Hardhat as a network.
+1. Make sure Metamask is installed in your browser of choice.
+2. In Metamask, Add the Hardhat network: 
+```
+Account icon -> Settings -> Network -> Add Network
+
+```
+3. Enter:
+```
+Network Name - Hardhat (Localhost 8545)
+New RPC Url - http://localhost:8545
+Chain ID - 31337
+Currency Symbol - ETH
+```
+
+Now, if you navigate to the running app at localhost:3000, you should be able to connect your wallet.
+
+See more at: https://hardhat.org/tutorial/hackathon-boilerplate-project.html
 ## User Guide
 
 You can find detailed instructions on using this repository and many tips in [its documentation](https://hardhat.org/tutorial).
-
-- [Project description (Token.sol)](https://hardhat.org/tutorial/4-contracts/)
-- [Setting up the environment](https://hardhat.org/tutorial/1-setup/)
-- [Testing with Hardhat, Mocha and Waffle](https://hardhat.org/tutorial/5-test/)
-- [Setting up Metamask](https://hardhat.org/tutorial/8-frontend/#setting-up-metamask)
-- [Hardhat's full documentation](https://hardhat.org/getting-started/)
 
 For a complete introduction to Hardhat, refer to [this guide](https://hardhat.org/getting-started/#overview).
 
